@@ -2,36 +2,30 @@ package com.gcit.dto;
 
 public class User {
 	//data transfer object
-	private int id;
-	private String firstName;
-	private String lastName;
-	
+	private String name;
+	private String password;
 	public User() {
 		super();
 	}
-	public User(int id, String firstName, String lastName) {
+	
+	public User(String name, String password) {
 		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.name = name;
+		this.password = password;
 	}
-	public int getId() {
-		return id;
+
+	public String getName() {
+		return name;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getPassword() {
+		return password;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+
 	
 }
